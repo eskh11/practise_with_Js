@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/Logo.png" alt="logo"
+        /></a>
+        <h3 class="head">WeatherApp!</h3>
+        <a href="#main" class="btn rounded-pill btn-primary">TRY</a>
+      </div>
+    </nav>
+    <!-- Nav Bar -->
+    <!-- landing -->
+    <div
+      class="landing d-flex justify-content-center align-items-center bg-dark"
+    >
+      <div class="text-center text-light">
+        <h4 class="text-capitalize">fetch weather data by city name</h4>
+        <a href="#main" class="btn rounded-pill btn-primary mt-3 fw-bold fs-5"
+          >Get Startrd</a
+        >
+      </div>
+    </div>
+    <!-- landing -->
+    <!-- main -->
+    <main class="pt-5 pb-5" id="main">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-lg-6 col-md-6 col-sm-12 text-center pb-5">
+            <div class="mt-5">
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Enter City Name"
+                class="p-3 rounded-pill w-lg-50 mt-lg-5 mt-3"
+              />
+            </div>
+            <div>
+              <button
+                class="search-btn btn rounded-pill btn-primary mt-3 w-lg-25 fw-bold fs-5"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+            <div class="card border-0">
+              <h3 class="text-uppercase city-name">----------</h3>
+              <img
+                src="imgs/11d@2x.png"
+                class="card-img-top img-fluid w-25 m-auto img-con"
+                alt="condtion-img"
+              />
+              <span class="fw-bold text-capitalize description">-------</span>
+              <div class="card-body">
+                <h5 class="card-title mt-2 temp">
+                  Current tempreture:
+                  <span>----&deg;C</span>
+                </h5>
+                <div class="row pt-4">
+                  <div class="col-lg-3 col-md-6 col-6">
+                    <h6 class="text-uppercase">feels like</h6>
+                    <p class="text-black-50 feel">----</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-6">
+                    <h6 class="text-uppercase">humadity</h6>
+                    <p class="text-black-50 hum">-------</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-6">
+                    <h6 class="text-uppercase">Pressure</h6>
+                    <p class="text-black-50 pres">-----</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-6">
+                    <h6 class="text-uppercase">wind</h6>
+                    <p class="text-black-50 wind">------</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main -->
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

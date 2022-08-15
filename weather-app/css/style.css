@@ -47,7 +47,6 @@ input[type="text"]:focus::placeholder {
 footer p span {
   color: var(--main-color);
   font-size: 1.3rem;
-  font-weight: bold;
 }
 footer > p {
   font-size: 15px;

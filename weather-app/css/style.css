@@ -34,12 +34,18 @@ input[type="text"]::placeholder {
 input[type="text"]:focus::placeholder {
   opacity: 0;
 }
-.card {
-  background-color: var(--back-color) !important;
-}
+
 .card > span {
   color: var(--main-color);
 }
 .card-body h6 {
   color: var(--alt-color);
+}
+footer p span {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card {
+  background-color: var(--back-color) !important;
 }

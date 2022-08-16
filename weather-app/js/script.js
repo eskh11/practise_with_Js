@@ -74,7 +74,7 @@ document.addEventListener("click", function (e) {
     window.open("https://www.facebook.com/firstnameeslam.khaled");
   } else if (e.target.classList.contains("wbtn")) {
     window.open(
-      "https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%2F%3Fphone%3D%252B201066103501%26text%26type%3Dphone_number%26app_absent%3D0%26fbclid%3DIwAR05jzMPycIbJSzhfDb7sEHUB2DobsgRQ4iRoDp92vv9OS_7Ga15hIRAcv0&h=AT03CamLx_RWMGltedBma7gY089Va3nf77sQc07hr75Gbx0PAjy0ROqv2vtjlkf3fd-esEtg_zOIpu0QWd2cEZSuP5BTv9rEuFIQ6yo67p_NJIGZN8ei-XmufkIc7_cqMzv5sw"
+      "https://wa.me/+201066103501"
     );
   } else if (e.target.classList.contains("gbtn")) {
     window.open("https://github.com/eskh11");

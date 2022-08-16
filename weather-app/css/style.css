@@ -54,3 +54,6 @@ footer > p {
 .card {
   background-color: var(--back-color) !important;
 }
+button:focus {
+  box-shadow: none !important;
+}

@@ -1,0 +1,224 @@
+:root {
+  --dark-color: #19283f;
+  --greencolor: #33d1cc;
+  --main-trans-du: 0.3s;
+  --red-color: #ff3150;
+  --yello-color: #ffc400;
+  --sec-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.up {
+  background-color: var(--dark-color);
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--yello-color);
+  position: fixed;
+  bottom: 15px;
+  right: -30px;
+  z-index: 100;
+  transition: var(--main-trans-du);
+}
+.up:hover {
+  transform: scale(1.1);
+  color: var(--yello-color);
+}
+.main-btn {
+  background-color: var(--red-color) !important;
+  color: var(--yello-color) !important;
+}
+.main-btn:hover {
+  background-color: #e91e63 !important;
+}
+.main-title .title-icon {
+  color: var(--yello-color);
+  font-size: 60px;
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--greencolor);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Start Nav Bar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--greencolor);
+}
+.navbar .search {
+  border-left: 1px solid var(--greencolor);
+}
+.navbar input[type="search"] {
+  top: 35px;
+  left: -55px;
+  border: none;
+  border-bottom: 1px solid var(--greencolor);
+  caret-color: var(--greencolor);
+  opacity: 0;
+  transition: var(--main-trans-du);
+  height: 0;
+}
+.navbar input[type="search"].active {
+  height: initial !important;
+  opacity: 1 !important;
+}
+.navbar input[type="search"]:focus {
+  outline: none;
+}
+.navbar .search svg {
+  color: white;
+  transition: var(--main-trans-du);
+}
+.navbar .search svg:hover {
+  color: var(--greencolor);
+  transform: scale(1.1);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 30px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* End Nav Bar */
+/* Start landing */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+/* End landing */
+/* start Feauters */
+
+.feautures .icon-holder {
+  height: 200px;
+}
+.feautures .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feautures .icon-holder .number {
+  font-size: 12rem;
+  color: var(--sec-color);
+}
+.feautures .icon-holder .icon {
+  color: var(--greencolor);
+}
+.feautures .feat h4 {
+  color: var(--yello-color);
+}
+/* End Feauters */
+/* start our work */
+.our-work {
+  background-color: var(--sec-color);
+}
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yello-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #717171ad;
+  color: white;
+  font-weight: bold;
+  line-height: 9;
+  transition: var(--main-trans-du);
+  transform: translateX(calc(-100% - 10px));
+}
+.our-work .box:hover::before {
+  transform: translate(0);
+}
+/* END our work */
+/* start stuff */
+.description {
+  max-width: 500px;
+}
+/* end stuff */
+/* start team */
+.our-team {
+  background-color: var(--sec-color);
+}
+.our-team h2 {
+  color: var(--yello-color);
+}
+.our-team .box h4 {
+  background-color: var(--greencolor);
+  position: absolute;
+  top: 50%;
+  transform: translateY(100%);
+  width: 100%;
+}
+.our-team .box img {
+  height: 430px !important;
+}
+/* end team */
+/* start project */
+.project {
+  background-color: var(--dark-color);
+}
+/* End project */
+/* start subscribe */
+.subscribe {
+  background-color: var(--yello-color);
+  color: var(--dark-color);
+}
+.subscribe input[type="email"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+  color: white;
+}
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yello-color);
+  border: none;
+}
+/* end subscribe */
+/* start footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--greencolor);
+}
+.footer .copyright > div span {
+  color: var(--yello-color);
+}
+/* end footer */
